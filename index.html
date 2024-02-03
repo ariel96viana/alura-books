@@ -21,7 +21,7 @@
     <header class="cabecalho">
       <div class="container">
         <input type="checkbox" id="menu" class="container__botao" />
-        <label for="menu">
+        <label for="menu" class="container__label">
           <span class="cabecalho__menu-hamburguer container__imagem"></span>
         </label>
         <ul class="lista-menu">
@@ -51,7 +51,7 @@
 
       <ul class="opcoes">
         <input type="checkbox" name="" id="opcoes-menu" class="opcoes__botao" />
-        <label for="opcoes-menu">
+        <label for="opcoes-menu" class="opcoes__label">
           <li class="opcoes__item">Categorias</li>
         </label>
         <ul class="lista-menu">
@@ -87,18 +87,24 @@
             alt="Meus Favoritos"
             class="container__imagem container__imagem-transparente"
         /></a>
-        <a href="#"
+
+        <a href="#" class="container__link"
           ><img
             src="./img/Sacola.svg"
             alt="Carrinho de Compras"
             class="container__imagem"
-        /></a>
-        <a href="#"
+        />
+        <p class="container__texto">Minha Sacola</p>
+      </a>
+
+        <a href="#" class="container__link"
           ><img
             src="./img/Usuario.svg"
             alt="Meu Perfil"
             class="container__imagem"
-        /></a>
+        />
+        <p class="container__texto">Meu Perfil</p>
+      </a>
       </div>
     </header>
 
@@ -117,6 +123,7 @@
     </section>
     <section class="carrossel">
       <h2 class="carrossel__titulo">Últimos Lançamentos</h2>
+      <div class="carrossel__container">
       <!-- Slider main container -->
       <div class="swiper">
         <!-- If we need pagination -->
@@ -190,6 +197,7 @@
     </section>
     <section class="carrossel">
       <h2 class="carrossel__titulo">Mais Vendidos</h2>
+      <div class="carrossel__container">
       <!-- Slider main container -->
       <div class="swiper">
         <!-- If we need pagination -->
@@ -264,6 +272,8 @@
           <a href="#" class="botoes__ancora">Saiba Mais</a>
         </div>
       </div>
+    </div>
+  </div>
     </section>
     <section class="topicos">
       <h2 class="topicos__titulo">Tópicos visitados recentemente</h2>
@@ -295,10 +305,12 @@
       </ul>
     </section>
     <section class="contato">
+      <div class="contato__descricao">
       <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
       <p class="contato__texto">
         Atualizações de e-books, novos livros, promoções e outros.
       </p>
+    </div>
       <input
         type="email"
         name=""
